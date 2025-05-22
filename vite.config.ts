@@ -16,7 +16,7 @@ export default defineConfig({
       /** 设置 `@` 指向 `src` 目录 */
       { find: '@', replacement: pathResolve('src') },
       /** 设置 `#` 指向 `types` 目录 */
-      { find: '#', replacement: pathResolve('types') },
+      { find: '#', replacement: pathResolve('src/types') },
       // 组件
       { find: '_c', replacement: pathResolve('src/components')},
       // styles

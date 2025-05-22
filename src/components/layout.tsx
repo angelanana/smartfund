@@ -12,11 +12,17 @@ const Layout = () => {
     navigate('/login');
   };
 
+  const handleClickMenu = ({ key }: { key: string }) => {
+    if (key === '1') {
+      navigate('/');
+    }
+  }
+
   return (
     <AntLayout style={{ minHeight: '100vh' }}>
       <Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ color: '#fff', fontSize: 20 }}>SmartFund</div>
-        <Menu theme="dark" mode="horizontal" items={[{ key: '1', label: '基金列表' }]} />
+        <Menu theme="dark" mode="horizontal" items={[{ key: '1', label: '基金列表' }]} onClick={handleClickMenu}/>
         <Button type="primary" onClick={logout}>
           退出登录
         </Button>

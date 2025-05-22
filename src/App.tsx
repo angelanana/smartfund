@@ -6,6 +6,7 @@ import Login from './pages/login';
 import ProductList from './pages/productList';
 import ProductDetail from './pages/productDetail';
 import Layout from './components/layout';
+import New from './pages/new';
 
 function App() {
   const isLogin = !!localStorage.getItem('token');
@@ -21,6 +22,7 @@ function App() {
           >
             <Route index element={<ProductList />} />
             <Route path="product/:id" element={<ProductDetail />} />
+            <Route path="/new" element={<New />} />
           </Route>
         </Routes>
       </Router>

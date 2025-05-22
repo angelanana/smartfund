@@ -8,7 +8,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "#/*": ["types/*"],
+      "#/*": ["src/types/*"],
       "_c/*": ["src/components/*"],
       "_s/*": ["src/styles/*"]
     }
